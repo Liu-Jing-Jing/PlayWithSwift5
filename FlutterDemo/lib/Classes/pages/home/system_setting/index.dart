@@ -57,7 +57,7 @@ class _SystemPageState extends State<SystemPage> {
           '小桔子🍊',
           style: TextStyle(color: Colors.black),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromRGBO(245, 243, 243, 1),
       ),
       body: SafeArea(
         /// 添加系统的安全区
@@ -125,6 +125,23 @@ class _SystemPageState extends State<SystemPage> {
                   },
                   color: Colors.blue,
                   textColor: Colors.white,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(8, 8, 8, 8),
+                  //设置 child 居中
+                  alignment: Alignment(0, 0),
+                  height: 50,
+                  width: 300,
+                  //边框设置
+                  decoration: new BoxDecoration(
+                    //背景
+                    color: Colors.white,
+                    //设置四周圆角 角度
+                    borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                    //设置四周边框
+                    border: new Border.all(width: 1, color: Colors.lightBlue),
+                  ),
+                  child: Text("按钮"),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
